@@ -5,13 +5,34 @@
 </head>
 <body>
     <canvas></canvas>
-    <input id="edPhrase" list="phrases" value="Hello, world!">
-    <datalist id="phrases">
-    <option value="Good morning Vietnam">Good morning Vietnam</option>
-    <option value="Stay classy San Francisco">Stay classy San Francisco</option>
-    <option value="Cleaveland Rocks">Cleaveland Rocks</option>
-    <option value="I see dead people">I see dead people</option>
-    <option value="Guess who's drunk">Guess who's drunk</option>
+    <h2>Clock Test</h2>
+
+<!-- Timezone selector using input + datalist -->
+<label for="timezone">Select Time:</label>
+<input id="timezone" list="timezones" value="Local Time">
+<datalist id="timezones">
+    <option value="Local Time"></option>
+    <option value="UTC"></option>
+</datalist>
+
+<br><br>
+
+<!-- Test phrases input using same style -->
+<label for="edPhrase">Choose a phrase:</label>
+<input id="edPhrase" list="phrases" value="Hello, world!">
+<datalist id="phrases">
+    <option value="Good morning Vietnam"></option>
+    <option value="Stay classy San Francisco"></option>
+    <option value="Cleaveland Rocks"></option>
+    <option value="I see dead people"></option>
+    <option value="Guess who's drunk"></option>
+</datalist>
+
+<br><br>
+
+<!-- Canvas for clock -->
+<canvas></canvas>
+
 </datalist>
 
     <script src="sript.js"></script>
